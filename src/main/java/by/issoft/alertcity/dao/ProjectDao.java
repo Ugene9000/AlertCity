@@ -6,13 +6,12 @@ import java.util.List;
 
 public interface ProjectDao {
 
-	boolean add(Project project) throws Exception;
+	Long save(Project project);
 
-	boolean update(Project project);
+	void update(Project project);
 
-	Project getById(Long id);
+	Project findById(Long id);
 
-	List<Project> getAll() throws Exception;
-
+	List<Project> findAll();
 
 }
